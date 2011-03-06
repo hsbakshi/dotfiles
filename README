@@ -1,0 +1,12 @@
+
+Name: dotfiles
+Author: Hrishikesh Bakshi
+
+Description:
+    I use this repository to store my linux settings files.
+    To use these files:
+        1. Clone this repository anywhere in your directory.
+        2. Backup your original settings files (~/.vimrc etc).
+        3. Run the set_symlinks.py script.
+    The set_symlinks.py will REPLACE your settings files.
+
