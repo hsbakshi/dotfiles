@@ -11,6 +11,8 @@ set smarttab        " Alignment for tab in front of line
 set expandtab       " Convert tabs to Spaces
 syntax on           " Syntax highlighting
 set go+=a           " support for systemp clipboard
+filetype on 
+filetype plugin on
 
 """ Key mappings
  " Tab for next tab
@@ -31,15 +33,16 @@ endif
 
 """ C/C++ 
  " Doxygen style comments
-autocmd Filetype c,cpp set comments^=:/// 
+"autocmd Filetype c,cpp lollerz
+au Filetype c,cpp set comments-=://
+au Filetype c,cpp set comments+=:///
+au Filetype c,cpp set comments+=://
 
 """ Python 
  " auto complete
-filetype plugin on
 let g:pydiction_location = '/home/hrishi/.vim/pydict/complete-dict'
 
 
 """ Json view
 autocmd BufRead *.json set filetype=json
 au! Syntax json source ~/.vim/json.vim
-
