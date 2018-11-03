@@ -6,7 +6,7 @@ set ignorecase      " ignore case for search
 set ts=4            " Width of a tab (tab stop)
 set sw=4            " Width for >> and << commands
 set sts=4           " Tabs spacing (soft tab stop)
-set tw=79           " Max line width
+"""set tw=79           " Max line width
 set smarttab        " Alignment for tab in front of line
 set expandtab       " Convert tabs to Spaces
 syntax on           " Syntax highlighting
@@ -23,11 +23,13 @@ nnoremap <S-Tab> :tabp<CR>
 
 """ UI Options
 set guioptions-=T               " Remove toolbar for gvim
+set guioptions-=m  "remove menu bar
 
-set guifont=Courier\ New\ 9 "   " Set font
+
+"""set guifont=Courier\ New\ 9 "   " Set font
 
 if has("gui_running")
-    set lines=50 columns=80     " gvim size
+    set lines=40 columns=120     " gvim size
 endif
 
 
@@ -45,4 +47,6 @@ let g:pydiction_location = '/home/hrishi/.vim/pydict/complete-dict'
 
 """ Json view
 autocmd BufRead *.json set filetype=json
-au! Syntax json source ~/.vim/json.vim
+"""au! Syntax json source ~/.vim/json.vim
+
+color desert

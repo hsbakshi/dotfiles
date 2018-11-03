@@ -10,6 +10,8 @@ fi
 
 # User specific aliases and functions
 
+set -o vi
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 
 # amazon ec2
@@ -54,3 +56,9 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 export GOPATH=/home/hrishi/gowork
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/hrishi/software/google-cloud-sdk/path.bash.inc' ]; then . '/home/hrishi/software/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/hrishi/software/google-cloud-sdk/completion.bash.inc' ]; then . '/home/hrishi/software/google-cloud-sdk/completion.bash.inc'; fi
