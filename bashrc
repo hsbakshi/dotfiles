@@ -131,7 +131,8 @@ fi
 
 export GOPATH=/home/hrishi/gowork
 
-#alias pip='pip3'
+alias pip='pip3'
+alias python='python3'
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/hrishi/software/google-cloud-sdk/path.bash.inc' ]; then . '/home/hrishi/software/google-cloud-sdk/path.bash.inc'; fi
